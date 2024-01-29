@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8">
+  <title>es6</title>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+  <h1>es6</h1>
+  <p>Open the Console</p>
+  <script>
+    //arr.sort() method 특징 : 배열 자체가 변경, 인수로 정렬 로직 추가
+    //인자 값을 적지 않으면 본인이 정한 순서대로 출력 
+    let arr = [27, 8, 5, 13]
+    function fn(a,b){
+      console.log(a,b)
+      return a-b;
+    } //트리맵 알고리즘 으로 큰 값이 오른쪽으로 >>이동
+    arr.sort(fn);
+    console.log(arr);
+</script>
+</body>
+
+</html>
