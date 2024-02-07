@@ -1,5 +1,6 @@
 import "./ReviewList.css";
 import StarRating from "./StarRating";
+// import { item } from "../mock.json";
 
 function formatData(value) {
   const date = new Date(value);
@@ -11,11 +12,7 @@ function ReviewListItem({ item, onDelete }) {
   };
   return (
     <div className="ReviewListItem">
-      <img
-        className="ReviewListItem-img"
-        src="{item.imgUrl}"
-        alt="{item.title}"
-      />
+      <img className="ReviewListItem-img" src={item.imgUrl} alt={item.title} />
       <div>
         <h3>{item.title}</h3>
         <p>
