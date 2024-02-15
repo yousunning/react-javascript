@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function pow(x, n) {
+      let result = 1;
+      for (let i = 0; i < n; i++) {
+        result *= x;
+      }
+      return result;
+    }
+    let x = prompt("x?", ""),
+      n = prompt("n?", "");
+    if (n <= 0) {
+      alert(
+        `${n}`
+      );
+    } else {
+      alert(pow(x, n));
+    }
+
+    //클린코드로 바꾼 버전
+    function pow(b, d) {
+      let result = 1;
+
+      for (let i = 0; i < n; i++) {
+        result *= d
+      }
+      return result;
+    }
+    let d = prompt("x", "")
+    let b = prompt("n", "")
+    if (n <= 0) {
+      alert(`${n}`)
+    } else {
+      alert(pow(b, d))
+    }
+  </script>
+</body>
+
+</html>
