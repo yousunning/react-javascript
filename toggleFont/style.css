@@ -1,0 +1,14 @@
+body {
+  background-color: burlywood;
+  text-align: center;
+}
+h1 {
+  color: coral;
+  transition: color.5s ease-in-out;
+}
+.clicked {
+  color: cornflowerblue;
+}
+.sexy-font {
+  font-family: Arial, Helvetica, sans-serif;
+}
